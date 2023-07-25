@@ -1,6 +1,11 @@
+"use client";
+
+import {signIn} from 'next-auth/react'
 
 export default function Home() {
   return (
-    <div>Homepage - '/'</div>
+    <div>
+      <button onClick={()=> signIn()}>Sign In</button>
+    </div>
   )
 }
